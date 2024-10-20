@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "titulo": "Consejos para unas vacaciones perfectas",
+    "contenido": "Aquí te damos algunos consejos para disfrutar tus vacaciones al máximo. Asegúrate de planificar con tiempo, elegir el alojamiento adecuado y relajarte durante el viaje.",
+    "autor": "Juan Pérez",
+    "fecha": "2024-10-10"
+  },
+  {
+    "id": 2,
+    "titulo": "Los mejores destinos turísticos en Mérida",
+    "contenido": "Mérida es un lugar ideal para disfrutar de paisajes naturales increíbles. No te puedes perder la visita al Parque Nacional Sierra Nevada, los páramos y la famosa Laguna de Mucubají.",
+    "autor": "María Gómez",
+    "fecha": "2024-10-15"
+  },
+  {
+    "id": 3,
+    "titulo": "Cómo elegir la mejor habitación de hotel",
+    "contenido": "Cuando elijas una habitación de hotel, es importante considerar factores como la vista, el tamaño, y las comodidades adicionales. Opta por suites si buscas lujo y confort, o habitaciones dobles si viajas en grupo.",
+    "autor": "Luis Torres",
+    "fecha": "2024-10-18"
+  },
+  {
+    "id": 4,
+    "titulo": "Actividades al aire libre para disfrutar en vacaciones",
+    "contenido": "Desde caminatas por la montaña hasta deportes acuáticos, te presentamos una lista de actividades que puedes disfrutar al aire libre para que tus vacaciones sean memorables.",
+    "autor": "Claudia Medina",
+    "fecha": "2024-10-20"
+  }
+]
