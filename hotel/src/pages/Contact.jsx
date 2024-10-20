@@ -1,69 +1,58 @@
 import React, { useState } from 'react';
+import '../styles/Contact.css';
 
 function Contact() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
-  });
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        message: ''
+    });
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        });
+    };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Aquí iría la lógica para enviar el formulario al backend
-    console.log('Datos enviados:', formData);
-    alert('¡Gracias por contactarnos! Te responderemos pronto.');
-  };
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        alert('Formulario enviado');
+        // Lógica para enviar el formulario al servidor
+    };
 
-  return (
-    <div className="p-8">
-      <h2 className="text-3xl font-bold mb-6">Contáctanos</h2>
-      <form onSubmit={handleSubmit} className="max-w-lg mx-auto bg-white shadow-lg rounded-lg p-6">
-        <div className="mb-4">
-          <label className="block text-sm font-semibold mb-2">Nombre</label>
-          <input
-            type="text"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            className="w-full p-2 border border-gray-300 rounded-lg"
-            required
-          />
+    return (
+        <div className="center-container">
+            <h1>Contacto</h1>
+            <p>¿Tienes alguna pregunta? ¡Envíanos un mensaje!</p>
+            <form onSubmit={handleSubmit} className="contact-form">
+                <input 
+                    type="text" 
+                    name="name" 
+                    placeholder="Escribe tu nombre"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
+                />
+                <input 
+                    type="email" 
+                    name="email" 
+                    placeholder="Correo electrónico"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                />
+                <textarea 
+                    name="message"
+                    placeholder="Escribe tu mensaje"
+                    value={formData.message}
+                    onChange={handleChange}
+                    required
+                />
+                <button type="submit">Enviar</button>
+            </form>
         </div>
-        <div className="mb-4">
-          <label className="block text-sm font-semibold mb-2">Email</label>
-          <input
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            className="w-full p-2 border border-gray-300 rounded-lg"
-            required
-          />
-        </div>
-        <div className="mb-4">
-          <label className="block text-sm font-semibold mb-2">Mensaje</label>
-          <textarea
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            className="w-full p-2 border border-gray-300 rounded-lg"
-            rows="5"
-            required
-          ></textarea>
-        </div>
-        <button
-          type="submit"
-          className="w-full bg-blue-600 text-white font-semibold py-2 rounded-lg"
-        >
-          Enviar Mensaje
-        </button>
-      </form>
-    </div>
-  );
+    );
 }
 
 export default Contact;
