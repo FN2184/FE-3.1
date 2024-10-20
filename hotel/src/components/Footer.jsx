@@ -1,8 +1,15 @@
+import { motion } from 'framer-motion';
+
 function Footer() {
   return (
-    <footer className="p-4 bg-blue-600 text-white text-center">
+    <motion.footer
+      className="bg-purple-700 text-white text-center p-4 fixed bottom-0 w-full"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
       <p>&copy; 2024 Hotel Venezuela. Todos los derechos reservados.</p>
-    </footer>
+    </motion.footer>
   );
 }
 
