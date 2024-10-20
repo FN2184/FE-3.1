@@ -1,0 +1,75 @@
+/* Estilos básicos para el navbar */
+.navbar {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Menú principal en horizontal */
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Esto asegura que el menú sea horizontal */
+}
+
+.nav-menu li {
+    position: relative; /* Importante para las subcategorías */
+    display: inline-block; /* Esto mantiene los elementos principales en horizontal */
+}
+
+/* Estilos de los enlaces principales del menú */
+.nav-menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+    background-color: #575757;
+}
+
+/* Submenú desplegable */
+.dropdown-content {
+    display: none; /* Oculta las subcategorías inicialmente */
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%; /* Despliega las subcategorías justo debajo del menú principal */
+    left: 0; /* Alinea las subcategorías con el menú principal */
+}
+
+.dropdown-content li a {
+    padding: 12px 16px;
+    text-decoration: none;
+    color: white;
+    text-align: left;
+}
+
+.dropdown-content li a:hover {
+    background-color: #575757;
+}
+
+/* Mostrar el submenú cuando se pasa el ratón */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Ajustar el diseño del menú para dispositivos móviles */
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .dropdown-content {
+        position: static; /* Asegura que el submenú se despliegue correctamente en pantallas pequeñas */
+    }
+}

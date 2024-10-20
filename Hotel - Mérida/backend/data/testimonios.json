@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "nombre": "Ana López",
+    "testimonio": "El hotel fue increíble, el servicio fue excelente y la vista impresionante."
+  },
+  {
+    "id": 2,
+    "nombre": "Carlos Rodríguez",
+    "testimonio": "Una experiencia maravillosa, volvería sin dudarlo."
+  }
+]

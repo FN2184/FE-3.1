@@ -1,0 +1,32 @@
+/* Reseteo básico de CSS para asegurar la compatibilidad en todos los navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo básico para el cuerpo de la página */
+body {
+    background-color: #fff;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Alinear todo el contenido centrado */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Estilo base para enlaces */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Enlaces con hover */
+a:hover {
+    color: #007BFF;
+}
